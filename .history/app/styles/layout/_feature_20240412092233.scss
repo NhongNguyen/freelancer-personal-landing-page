@@ -1,0 +1,92 @@
+.feature{
+  .container{
+    background-color: $secondary-bg;
+    height:863px;
+  }
+  .block-box{
+    margin-top: 30px;
+  }
+  .feature-card-list{
+    @include touchSlider(26%,30px);
+    .feature-card-item{
+      @include size(320px,342px);
+      border: 1px solid $secondary-line;
+      margin-right:40px;
+      text-align: center;
+      padding:42px 35px;
+      @include flexBox(stretch,space-between,column);
+      transition: all linear 0.25s;
+      
+      margin-bottom: 80px;
+      .feature-card-title{
+        font-size:21px;
+        font-weight: bold;
+      }
+      .feature-card-content{
+        font-size:16px;
+      }
+      .feature-card-link{
+        color:black;
+      }
+    }
+    .feature-card-item:hover{
+      background-color: white !important;
+      box-shadow: 0px 20px 20px #D0D0D0 !important;
+      .feature-card-title{
+        color:$secondary-color;
+      }
+      .feature-card-content{
+        font-size:16px;
+      }
+      .feature-card-link{
+        color:$secondary-color;
+      }
+    }
+  }
+  @include maxWidth(1439px){
+    .container{
+      background-color: $secondary-bg;
+      height:863px;
+    }
+    .block-box{
+      margin-top: 30px;
+    }
+    .feature-card-list{
+      @include touchSlider();
+      .feature-card-item{
+        @include size(320px,342px);
+        border: 1px solid $secondary-line;
+        margin-right:40px;
+        text-align: center;
+        padding:42px 35px;
+        @include flexBox(stretch,space-between,column);
+        transition: all linear 0.25s;
+        
+        margin-bottom: 80px;
+        .feature-card-title{
+          font-size:21px;
+          font-weight: bold;
+        }
+        .feature-card-content{
+          font-size:16px;
+        }
+        .feature-card-link{
+          color:black;
+        }
+      }
+      .feature-card-item:hover{
+        background-color: white !important;
+        box-shadow: 0px 20px 20px #D0D0D0 !important;
+        .feature-card-title{
+          color:$secondary-color;
+        }
+        .feature-card-content{
+          font-size:16px;
+        }
+        .feature-card-link{
+          color:$secondary-color;
+        }
+      }
+    }
+  }
+}

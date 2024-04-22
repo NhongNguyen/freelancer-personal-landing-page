@@ -1,0 +1,28 @@
+mixin blockBox(caption,span,captionsecond="null",desc)
+	.block-box
+		.block-box-title
+			if caption!="null"
+				.block-box-caption= caption
+			.block-box-caption-span= span
+			if captionsecond!="null"
+				.block-box-caption-caption= captionsecond
+		if desc
+			p.block-box-desc= desc
+
+mixin serviceItem(src=src,content)
+	.service-img-item
+		img(src=src).service-img
+		.service-content
+			.service-title= content
+			.service-icon-list
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+
+mixin featureItem(title="",content,link="Learn more",src="#")
+	.feature-card-item
+		.feature-card-title=title 
+		.feature-card-content=content
+		a(href=src).feature-card-link=link

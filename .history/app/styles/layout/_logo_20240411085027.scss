@@ -1,0 +1,78 @@
+.logo{
+  .container{
+    background-color: $secondary-bg;
+    .logo-list{
+      padding:40px 28px;
+      @include flexBox(stretch,space-between);
+    }
+    .logo-item{
+      object-fit:contain;
+    }
+  }
+  @include maxWidth(1025px){
+    .container{
+      .logo-list{
+        padding:30px 10px;
+      }
+      .logo-item{
+        object-fit:contain;
+        @include size(120px);
+      }
+    }
+  }
+  @include maxWidth(949px){
+    .container{
+      .logo-list{
+        padding:20px 5px;
+      }
+      .logo-item{
+        object-fit:contain;
+        @include size(90px);
+      }
+    }
+  }
+  @include maxWidth(714px){
+    .container{
+        .logo-list{
+          padding:2px 2px;
+        }
+        .logo-item{
+          object-fit:contain;
+          @include size(75px);
+        }
+      }
+  }
+  @include maxWidth(537px){
+    .container{
+      .logo-list{
+        padding:1px;
+      }
+      .logo-item{
+        object-fit:contain;
+        @include size(65px);
+      }
+    }
+  }  
+  @include maxWidth(450px){
+    .container{
+      .logo-list{
+        padding:1px;
+      }
+      .logo-item{
+        object-fit:contain;
+        @include size(60px);
+      }
+    }
+  }
+  @include maxWidth(426px){
+    .container{
+      .logo-list{
+        padding:1px;
+      }
+      .logo-item{
+        object-fit:contain;
+        @include size(50px);
+      }
+    }
+  }
+}

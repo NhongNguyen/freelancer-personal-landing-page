@@ -1,0 +1,38 @@
+.service{
+  .container{
+    .service-img-list{
+      @include flexBox(stretch,center);
+    }
+    .service-img-list-left{
+      .service-img-item{
+        position: relative;
+        .service-img{
+          opacity: 0.6;
+        }
+        .service-content{
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+          transform: translate(50%,45%);    
+          @include size(225px);
+          margin:auto 0px;
+          text-align: center;
+          .service-title{
+            color:$third-color;
+            font-weight: bold;
+            font-size: 30px;
+          }
+          .service-icon-list{
+            text-align: center;
+            .service-icon-item{
+              color:$color-star;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

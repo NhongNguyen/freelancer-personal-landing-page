@@ -1,0 +1,37 @@
+// .wrapper {
+// 		max-width: $wrapper;
+// 		margin: 0 auto;
+// }
+.container {
+	max-width: $container;
+	margin: 0 auto;
+	padding: 41px 136px 28px;
+}
+.container {
+	max-width: $container + 30px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.block-box{
+	text-align: center;
+	max-width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0px 10px;
+	margin-top: 140px;
+}
+.block-box-title{
+	@include flexBox();
+	
+}
+.block-box-caption{
+	font-size:50px;
+	margin-bottom: 45px;
+}
+.block-box-desc{
+	font-size:15px;
+	line-height: 1.4;
+	font-weight: 300;
+	margin-bottom: 100px;
+}
+

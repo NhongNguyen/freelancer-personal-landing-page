@@ -1,0 +1,13 @@
+.header{
+  background: url('../images/header/header-background.jpg') no-repeat;
+  height: 990px;
+  .container{
+  }
+  .header-nav{
+    @include flexBox(stretch,space-between);
+  }
+  .header-nav-list{
+    @include flexBox(stretch,space-between);
+  }
+
+}

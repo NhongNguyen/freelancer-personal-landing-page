@@ -1,0 +1,10 @@
+.pricing{
+  .container{
+    .pricing-card{
+      @include flexBox();
+      .pricing-item{
+        362px,508px
+      }
+    }
+  }
+}

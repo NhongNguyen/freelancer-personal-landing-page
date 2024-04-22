@@ -1,0 +1,8 @@
+mixin blockBox(caption,span,captionsecond,desc)
+	.block-box
+		.block-box-caption= caption
+		.block-box-caption-span= span
+		if
+		.block-box-caption-caption = captionsecond
+		if desc
+			p.block-box-desc= desc

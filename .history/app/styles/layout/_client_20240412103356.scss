@@ -1,0 +1,58 @@
+.client{
+  .container{
+    .client-list{
+      .client-item{
+        @include flexBox();
+        .client-img{
+
+        }
+        .client-content{
+          background-color: $secondary-bg;
+          border-radius: 0px 0px 210px 0px;
+          margin-left:20px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          padding:110px 42px;
+          .client-content-title{
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .client-content-text{
+            font-size: 15px;
+          }
+          .client-item-icon{
+            font-size: 11px;
+            color:$color-star;
+            margin-right: 3px;
+          }
+          .client-author{
+            font-size:15px;
+            font-weight: bold;
+          }
+          .client-job{
+            font-size:15px;
+          }
+        }
+      }
+    }
+    .client-button{
+      margin-top:80px;
+      color: $secondary-color;
+      .client-button-previous{
+        border: 1px solid $secondary-color;
+        border-radius: 11px;
+        @include size(33px,23px);
+        @include flexBox(stretch,center,column);
+        margin: 0 auto;
+      }
+      .client-button-next{
+        border: 1px solid $secondary-color;
+        border-radius: 11px;
+        @include size(33px,23px);
+        @include flexBox(stretch,center,column);
+        margin: 0 auto;
+      }
+    }
+  }
+}

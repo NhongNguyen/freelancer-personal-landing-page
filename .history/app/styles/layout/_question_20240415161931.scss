@@ -1,0 +1,7 @@
+.question{
+  .container{
+    .question-item{
+      @include size(705px,230px);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.header{
+  .container{
+    background: url('../images/header/header-background.jpg') no-repeat;
+    height: 990px;
+  }
+  .header-nav{
+    @include flexBox(stretch,space-between);
+    &-left{
+      .header-nav-list{
+        @include flexBox(stretch,space-between);
+        .header-nav-item{
+          margin-right:54px;
+        }
+      }
+    }
+    &-right{
+      .header-nav-auth{
+        @include flexBox(stretch,space-between);
+        .header-nav-sign:not(:last-child){
+          margin-right: 30px;
+        }
+        .up{
+          border: 1px solid $color-line;
+          color: $color-line
+        }
+      }
+    }
+  }
+  
+  
+
+}

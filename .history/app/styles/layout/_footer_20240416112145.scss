@@ -1,0 +1,32 @@
+.footer{
+  .container{
+    background-image: url("../images/footer/footer-background.jpg");
+    height:920px;
+    margin-top: 88px;
+    background-color: $third-bg;
+    color:white;
+    text-align: center;
+    @include flexBox(stretch,space-between,column);
+    .footer-title{
+      font-size:61px;
+      padding:0px 69px;
+    }
+    .footer-button{
+      @include size(218px,65px);
+    }
+    .footer-bottom{
+      @include flexBox(stretch,space-between,row);
+      .footer-left{
+        
+      }
+      .footer-right{
+        .footer-list{
+          @include flexBox();
+          .footer-item{
+            margin-left:145px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.pricing{
+  .container{
+    .pricing-card{
+      @include flexBox(stretch, space-between);
+      margin-top:150px;
+      text-align: center ;
+      .pricing-item{
+        padding: 50px 0px;
+        @include size(362px,508px);
+        border:1px solid $secondary-line;
+        @include flexBox(stretch, space-between,column);
+        .pricing-title{
+          font-size: 28px;
+          font-weight: bold;
+        }
+        .pricing-price{
+          font-size: 45px;
+          font-weight: bold;
+        }
+        .pricing-benefit-list{
+          @include flexBox(stretch,start,column);
+          padding: 0px 50px;
+          .pricing-benefit-item{
+            @include flexBox(center);
+            margin-bottom: 16px;
+            .pricing-benefit-icon{
+              margin-right:10px;
+            }
+          } 
+        }
+        .pricing-button{
+          @include size(278px,60px);
+          border:1px solid $secondary-line;
+          margin:0 auto;
+          @include flexBox(center,center);
+          transition: all linear 0.5s;
+          cursor: pointer;
+        }
+      }
+      .pricing-item:hover{
+        color:$secondary-color;
+        transform: translateY(-50px);
+        transition: all linear 0.5s;
+        box-shadow: 0px 20px 20px $secondary-line;
+        .pricing-button{
+          color:white;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+  @include maxWidth(1358px){
+    .container{
+      .pricing-card{
+        @include flexBox(stretch, space-between);
+        margin-top:150px;
+        .pricing-item{
+          padding: 15px 0px;
+          @include size(250px,508px);
+          @include flexBox(stretch, space-between,column);
+          .pricing-title{
+            font-size: 28px;
+          }
+          .pricing-price{
+            font-size: 45px;
+          }
+          .pricing-benefit-list{
+            @include flexBox(stretch,start,column);
+            padding: 0px 50px;
+            .pricing-benefit-item{
+              @include flexBox(center);
+              margin-bottom: 16px;
+              .pricing-benefit-icon{
+                margin-right:10px;
+              }
+            } 
+          }
+          .pricing-button{
+            @include size(150px,30px);
+            @include flexBox(center,center);
+          }
+        }
+        .pricing-item:hover{
+          color:$secondary-color;
+          transform: translateY(-50px);
+        }
+      }
+    }
+  }
+  @include maxWidth(972px){
+    .container{
+      .pricing-card{
+        @include flexBox(stretch, space-between,column);
+        margin-top:150px;
+        .pricing-item{
+          padding: 15px 0px;
+          @include size(100%,20px);
+          @include flexBox(stretch, space-between,column);
+          .pricing-title{
+            font-size: 28px;
+          }
+          .pricing-price{
+            font-size: 45px;
+          }
+          .pricing-benefit-list{
+            @include flexBox(stretch,start,column);
+            padding: 0px 50px;
+            .pricing-benefit-item{
+              @include flexBox(center);
+              margin-bottom: 16px;
+              .pricing-benefit-icon{
+                margin-right:10px;
+              }
+            } 
+          }
+          .pricing-button{
+            @include size(150px,30px);
+            @include flexBox(center,center);
+          }
+        }
+        .pricing-item:hover{
+          color:$secondary-color;
+          transform: translateY(-50px);
+        }
+      }
+    }
+  }
+}

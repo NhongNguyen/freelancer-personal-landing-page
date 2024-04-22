@@ -1,0 +1,28 @@
+.pricing{
+  .container{
+    .pricing-card{
+      @include flexBox(stretch, space-between);
+      margin-top:150px;
+      text-align: center ;
+      .pricing-item{
+        padding: 50px 0px;
+        @include size(362px,508px);
+        border:1px solid $secondary-line;
+        @include flexBox(stretch, space-between,column);
+        .pricing-button{
+          @include size(278px,60px);
+          border:1px solid $secondary-line;
+          margin:0 auto;
+          @include flexBox(center,center);
+        }
+      }
+      .pricing-item:hover{
+        color:$secondary-color;
+        .pricing-button{
+          
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}

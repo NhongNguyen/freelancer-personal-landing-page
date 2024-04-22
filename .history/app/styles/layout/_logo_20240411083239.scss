@@ -1,0 +1,24 @@
+.logo{
+  .container{
+    background-color: $secondary-bg;
+    .logo-list{
+      padding:40px 28px;
+      @include flexBox(stretch,space-between);
+    }
+    .logo-item{
+      object-fit:contain;
+    }
+  }
+  @include maxWidth(1110px){
+  }
+  @include maxWidth(949px){
+  }
+  @include maxWidth(714px){
+  }
+  @include maxWidth(656px){
+  }  
+  @include maxWidth(386px){
+  }
+  @include maxWidth(342px){
+  }
+}

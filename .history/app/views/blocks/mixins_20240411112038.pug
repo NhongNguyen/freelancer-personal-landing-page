@@ -1,0 +1,28 @@
+mixin blockBox(caption,span,captionsecond="null",desc)
+	.block-box
+		.block-box-title
+			if caption!="null"
+				.block-box-caption= caption
+			.block-box-caption-span= span
+			if captionsecond!="null"
+				.block-box-caption-caption= captionsecond
+		if desc
+			p.block-box-desc= desc
+
+mixin serviceItem(src=src,content)
+	.service-img-item
+		img(src=src).service-img
+		.service-content
+			.service-title= content
+			.service-icon-list
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+
+mixin featureItem(title=title,content=content,link=link)
+	.feature-card-item
+		.feature-card-title Word Load   
+		.feature-card-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		a(href="#").feature-card-link Learn More

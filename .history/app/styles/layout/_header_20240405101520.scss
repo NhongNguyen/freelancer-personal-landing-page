@@ -1,0 +1,10 @@
+.header{
+  .container{
+    background: url('../images/header/header-background.jpg') no-repeat;
+    height: 990px;
+  }
+  .header-nav{
+    @include flexBox("stretch",);
+  }
+
+}

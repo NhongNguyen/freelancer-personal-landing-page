@@ -1,0 +1,11 @@
+mixin blockBox(caption,span,captionsecond="null",desc)
+	.block-box
+		.block-box-title
+			.block-box-caption= caption
+			.block-box-caption-span= span
+			if captionsecond!="null"
+				.block-box-caption-caption= captionsecond
+		if desc
+			p.block-box-desc= desc
+
+mixin sevice

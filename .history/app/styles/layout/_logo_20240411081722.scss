@@ -1,0 +1,13 @@
+.logo{
+  .container{
+    background-color: $secondary-bg;
+    .logo-list{
+      padding:40px 28px;
+      z-index: ;
+      @include flexBox(stretch,space-between);
+    }
+    .logo-item{
+      object-fit:contain;
+    }
+  }
+}

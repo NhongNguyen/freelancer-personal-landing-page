@@ -1,0 +1,157 @@
+.header{
+  .container{
+    background: url('../images/header/header-background.jpg') no-repeat;
+    height: 990px;
+    position: relative;
+    z-index: -1;
+  }
+  .header-nav{
+    @include flexBox(center,space-between,);
+    font-size: 14px;
+    &-left{
+      .header-nav-list{
+        @include flexBox(center,space-between);
+        .header-nav-item{
+          margin-right:54px;
+        }
+        .brand{
+          color:$secondary-color;
+          
+          font-size: 18px;
+        }
+      }
+    }
+    &-right{
+      .header-nav-auth{
+        @include flexBox(center,space-between);
+        .header-nav-sign:not(:last-child){
+          margin-right: 30px;
+        }
+        .up{
+          border: 1px solid $color-line;
+          color: $secondary-color;
+          padding: 20px 45px;
+        }
+      }
+    }
+  }
+  .header-main{
+    @include flexBox(center);
+    .header-main-left{
+      position: relative; 
+      .header-main-title{
+        font-size: 81px;
+        line-height: 1.2;
+        position: absolute;
+        margin-top:-50px;
+        top:0;
+        left:0;
+        .header-title-item:not(:last-child){
+          font-family: $title-font;
+          letter-spacing: 8px;
+          margin-left:9px;
+        }
+        .web{
+          font-weight: bold;
+          color:$secondary-color;
+          font-size:81px;
+          letter-spacing: 10px;
+          white-space: nowrap;
+        }
+      }
+      .header-main-content{
+        padding-top:300px;
+      }
+      .header-main-button{
+        @include flexBox();
+        margin-bottom: -65px;
+        margin-top:45px;
+        .header-button-item.started{
+          color:$third-color;
+          background-color: $secondary-color;
+          padding:20px 60px;
+          margin-right: 20px;
+          .service{
+            .container{
+              .service-img-list{
+                @include flexBox(stretch,center);
+              }
+              .left{
+                margin-right:40px;
+                .service-img-item:first-child{
+                  background: black;
+                  border-radius: 235px 0px 0px 0px;
+                  margin-bottom: 40px;
+                }
+                .service-img-item:last-child{
+                  background: black;
+                  border-radius: 0px 0px 0px 235px;
+                }
+              }
+              .right{
+                margin-top: 80px;
+                .service-img-item:first-child{
+                  background: black;
+                  border-radius: 0px 235px 0px 0px;
+                  margin-bottom: 40px;
+                }
+                .service-img-item:last-child{
+                  background: black;
+                  border-radius: 0px 0px 235px 0px;
+                }
+              }
+              .service-img-list-item{
+                .service-img-item{
+                  position: relative;
+                  
+                  .service-img{
+                    opacity: 0.4;
+          
+                  }
+                  .service-content{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    transform: translate(50%,45%);    
+                    @include size(225px);
+                    margin:auto 0px;
+                    text-align: center;
+                    .service-title{
+                      color:$third-color;
+                      font-weight: bold;
+                      font-size: 30px;
+                      line-height: 1.1;
+                    }
+                    .service-icon-list{
+                      text-align: center;
+                      margin-top:15px;
+                      .service-icon-item{
+                        color:$color-star;
+                        font-size: 20px;
+                        margin-right:10px;
+                      }
+                    }
+                  }
+                }
+              }
+              .service-button{
+                border: 1px solid $secondary-color;
+                color: $secondary-color;
+                @include size(215px,58px);
+                margin:0 auto;
+                @include flexBox(center,center,column);
+              }
+            }
+          }
+        }
+        .header-button-item.explore{
+          color:$secondary-color;
+          border: 1px solid $secondary-color;
+          padding:20px 60px;
+        }
+      }
+    }
+  }
+}

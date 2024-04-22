@@ -1,0 +1,38 @@
+.header{
+  .container{
+    background: url('../images/header/header-background.jpg') no-repeat;
+    height: 990px;
+  }
+  .header-nav{
+    @include flexBox(center,space-between,);
+    &-left{
+      .header-nav-list{
+        @include flexBox(center,space-between);
+        font-size: 14px;
+        .header-nav-item{
+          margin-right:54px;
+        }
+        .brand{
+          color:$secondary-color;
+          
+        }
+      }
+    }
+    &-right{
+      .header-nav-auth{
+        @include flexBox(center,space-between);
+        .header-nav-sign:not(:last-child){
+          margin-right: 30px;
+        }
+        .up{
+          border: 1px solid $color-line;
+          color: $secondary-color;
+          padding: 20px 45px;
+        }
+      }
+    }
+  }
+  
+  
+
+}

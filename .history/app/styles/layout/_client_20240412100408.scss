@@ -1,0 +1,15 @@
+.client{
+  .container{
+    .client-list{
+      .client-item{
+        @include flexBox();
+        .client-img{
+
+        }
+        .client-content{
+          background-color: $third-bg;
+        }
+      }
+    }
+  }
+}

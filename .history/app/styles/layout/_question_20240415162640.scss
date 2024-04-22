@@ -1,0 +1,22 @@
+.question{
+  .container{
+    .question-item{
+      margin:0 auto;
+      @include size(705px,230px);
+      border:1px solid $secondary-line;
+      @include flexBox ();
+      padding:40px 50px;
+      margin-bottom: 30px;
+      .question-icon{
+        margin-right:32px;
+      }
+      .question-content{
+        @include flexBox (stretch, space-between,column);
+       .question-title{
+        font-size:19px;
+        
+       }
+      }
+    }
+  }
+}

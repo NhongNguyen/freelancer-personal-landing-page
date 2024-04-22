@@ -1,0 +1,20 @@
+.feature{
+  .container{
+    background-color: $secondary-bg;
+  }
+  .feature-card-list{
+    @include flexBox();
+    .feature-card-item{
+
+      .feature-card-title{
+
+      }
+      .feature-card-content{
+
+      }
+      .feature-card-link{
+
+      }
+    }
+  }
+}

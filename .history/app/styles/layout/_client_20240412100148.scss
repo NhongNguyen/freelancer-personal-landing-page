@@ -1,0 +1,9 @@
+.client{
+  .container{
+    .client-list{
+      .client-item{
+        @include flexBox();
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.feature{
+  .container{
+    background-color: $secondary-bg;
+  }
+  .feature-card-list{
+    @include flexBox();
+    .feature-card-item{
+      @include size(350px,342px);
+      border: 1px solid $secondary-line;
+      margin-right:40px;
+      text-align: center;
+      .feature-card-title{
+
+      }
+      .feature-card-content{
+
+      }
+      .feature-card-link{
+
+      }
+    }
+  }
+}

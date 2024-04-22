@@ -1,0 +1,55 @@
+.footer{
+  .container{
+    background-image: url("../images/footer/footer-background.jpg");
+    height:920px;
+    margin-top: 88px;
+    background-color: $third-bg;
+    color:white;
+    text-align: center;
+    @include flexBox(stretch,space-between,column);
+    .footer-title{
+      font-size:61px;
+      padding:0px 69px;
+      margin-top:100px;
+    }
+    .footer-button{
+      @include size(218px,65px);
+      margin-top:67px;
+    }
+    .footer-bottom{
+      @include flexBox(stretch,space-between,row);
+      margin-top:100px;
+      .footer-left{
+        @include flexBox(flex-start,flex-start,column);
+        @include size(160px);
+        text-align: start;
+        .footer-brand{
+          font-size:45px;
+          font-weight: bold;
+        }
+        .footer-address{
+          font-size:12px;
+         
+        }
+      }
+      .footer-right{
+        .footer-list{
+          @include flexBox();
+          .footer-item{
+            @include flexBox(flex-start,start,column);
+            margin-left:145px;
+            .footer-item-title{
+              margin-bottom:43px;
+              font-size:11px;
+              font-weight: bold;
+            }
+            .footer-item-link{
+              @include flexBox(flex-start,start,column);
+              margin-bottom:32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

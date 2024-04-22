@@ -1,0 +1,18 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "base/typography";
+@import "helpers/global";
+
+//font-
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+@import "layout/structure";
+@import "layout/header";
+@import "layout/logo";
+@import "layout/service";
+@import "layout/feature";
+@import "layout/client";
+@import "layout/pricing";
+@import "layout/question";
+@import "layout/footer";

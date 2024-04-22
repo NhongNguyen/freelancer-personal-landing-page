@@ -1,0 +1,10 @@
+.service{
+  .container{
+    .service-img-list{
+      @include flexBox(stretch,center);
+    }
+    .service-img-list-left{
+      .service-icon-item
+    }
+  }
+}

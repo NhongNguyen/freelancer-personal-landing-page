@@ -1,0 +1,59 @@
+mixin blockBox(caption,span,captionsecond="null",desc)
+	.block-box
+		.block-box-title
+			if caption!="null"
+				.block-box-caption= caption
+			.block-box-caption-span= span
+			if captionsecond!="null"
+				.block-box-caption-caption= captionsecond
+		if desc
+			p.block-box-desc= desc
+
+mixin serviceItem(src=src,content)
+	.service-img-item
+		img(src=src).service-img
+		.service-content
+			.service-title= content
+			.service-icon-list
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+				i.fa.fa-star.service-icon-item
+
+mixin featureItem(title="Word Load",content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",link="Learn more",src="#")
+	.feature-card-item
+		.feature-card-title=title 
+		.feature-card-content=content
+		a(href=src).feature-card-link=link
+
+mixin clientItem(src="../images/client/client-img1.png",title="Best Developers",text="Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.",author="Robert Johnson",job="Director at Behance")
+	.client-item
+		img(src=src).client-img
+		.client-content
+			.client-content-title= title
+			.client-content-text= text
+			.client-content-list
+				i.fa.fa-star.client-item-icon
+				i.fa.fa-star.client-item-icon
+				i.fa.fa-star.client-item-icon
+				i.fa.fa-star.client-item-icon
+				i.fa.fa-star.client-item-icon
+			.client-author= author
+			.client-job= job
+
+mixin benefitItem(benefit)
+	.pricing-benefit-icon
+	.pricing-benefit-item= benefit		
+
+mixin pricingItem(title="")
+	.pricing-item
+		.pricing-title
+		.pricing-price= price
+		.pricing-benefit-list
+
+
+mixin questionItem(title,text)
+	.question-item
+		.question-title= title
+		.question-text= text

@@ -1,0 +1,20 @@
+.pricing{
+  .container{
+    .pricing-card{
+      @include flexBox(stretch, space-between);
+      text-align: center ;
+      .pricing-item{
+        @include size(362px,508px);
+        border:1px solid $secondary-line;
+        @
+        .pricing-button{
+          @include size(278px,60px);
+          border:1px solid $secondary-line;
+          margin:0 auto;
+          @include flexBox(center,center);
+        }
+      }
+     
+    }
+  }
+}

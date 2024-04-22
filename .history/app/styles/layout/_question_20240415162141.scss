@@ -1,0 +1,9 @@
+.question{
+  .container{
+    .question-item{
+      margin:0 auto;
+      @include size(705px,230px);
+      border:1px solid $
+    }
+  }
+}
